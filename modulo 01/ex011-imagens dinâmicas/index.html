@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em html5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+        <picture><!--do menor para o maior no tamanho das imagens se n, n funciona-->
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem flexível">
+        </picture>
+
+        <h1>Vamos aprender a reproduzir áudios em HTML5</h1>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="midia/winter.mp3.mp3" type="audio/mpeg">
+            
+           <!--jeito mais fácil de add audio (audio src="midia/winter.mp3.mp3" controls autoplay>)-->
+            
+           <!--parte opcional-->
+
+            <p>Infelizmente seu navegador não é compatível com mp3. <a href="midia/winter.mp3.mp3">Clique aqui p/ baixar o arquivo!</a></p>
+        </audio><!--mp3 wav ogg-->
+
+        
+    
+    
+</body>
+</html>

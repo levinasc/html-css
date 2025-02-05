@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+    em HTML é ID    = em CSS é # (elemento principal)
+    em HTML é class = em CSS é . (vários elemntos secundários)
+*/
+
+body {
+    background-image: linear-gradient(to right, #858367, #b6a892,  #DECCA6, #DBD3C6, #EBE6D2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: cadetblue;
+}
+
+h1#principal {
+    text-align: center;
+    color: rgb(161, 91, 41);
+    font-style: italic;
+    background-color: rgb(194, 142, 241);
+}
+
+h2 {
+    color: rgb(87, 122, 51);
+}
+/*
+a partir daqui estarei usando a tag class com o (.) para identificar antes do nome do seletor 
+*/
+.basico {
+    color: rgb(59, 202, 71);
+}
+.intermediario {
+    color: rgb(250, 238, 70);
+}
+.avancado {
+    color: rgb(204, 56, 30);
+}
+.destaque {
+    background-color: blanchedalmond;
+}
+
