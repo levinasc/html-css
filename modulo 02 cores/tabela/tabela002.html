@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tbody {
+            background-color: rgba(128, 128, 128, 0.137);
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        .numero {
+            width: 20px;
+        }
+
+        .pop {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="numero">Nº</th>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="imagens/Bandeira_do_estado_de_São_Paulo.svg.webp" alt="SP"> São Paulo</td>
+                <td class="pop">45 973 190</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="imagens/Bandeira_de_Minas_Gerais.svg.webp" alt="MG"> Minas Gerais</td>
+                <td class="pop">21 322 692</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="imagens/Bandeira_do_estado_do_Rio_de_Janeiro.svg.webp" alt="RJ"> Rio de Janeiro</td>
+                <td class="pop">17 219 679</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>4</td>
+                <th>Total de habitantes</th>
+                <td class="pop"><strong>84 515 561</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
