@@ -10,18 +10,42 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        body > h1 {
+            text-align: center;
+        }
+
         tbody {
             background-color: rgba(128, 128, 128, 0.137);
         }
 
+        tbody > tr:nth-child(2n) /*efeito zebrado*/ {
+            background-color: rgb(182, 182, 182);
+        }
+
         table {
-            width: 400px;
+            width: 500px;
+            height: 1500px;
             border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        thead > tr > th /*cabeçalho fixo*/{
+            position: sticky;
+            top: -1px;
+            background-color: grey;
         }
 
         thead, tfoot {
@@ -30,7 +54,7 @@
         }
 
         .numero {
-            width: 20px;
+            width: 30px;
         }
 
         .pop {
@@ -43,11 +67,12 @@
     <h1>Tabelas Grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th class="numero">Nº</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -66,12 +91,22 @@
                 <td><img src="imagens/Bandeira_do_estado_do_Rio_de_Janeiro.svg.webp" alt="RJ"> Rio de Janeiro</td>
                 <td class="pop">17 219 679</td>
             </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="imagens/Bandeira_da_Bahia.svg.webp" alt="BA">Bahia</td>
+                <td class="pop">14 850 513</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><img src="imagens/Bandeira_do_Paraná.svg.webp" alt="PA">Paraná</td>
+                <td class="pop">11 824 665</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td>4</td>
-                <th>Total de habitantes</th>
-                <td class="pop"><strong>84 515 561</strong></td>
+                <td>6</td>
+                <th scope="row">Total de habitantes</th>
+                <td class="pop"><strong>111.190.739</strong></td>
             </tr>
         </tfoot>
     </table>
