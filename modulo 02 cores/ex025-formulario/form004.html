@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body p {font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+       legend {
+        font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: aqua; padding: 10px; border-radius: 10px;
+       }
+       .custom {
+            background-color: #4CAF50; /* Cor de fundo */
+            border: none; /* Sem borda */
+            color: white; /* Cor do texto */
+            padding: 15px 32px; /* Espaçamento interno */
+            text-align: center; /* Alinhamento do texto */
+            text-decoration: none; /* Sem sublinhado */
+            display: inline-block; /* Exibição em linha */
+            font-size: 16px; /* Tamanho da fonte */
+            margin: 4px 2px; /* Margem */
+            cursor: pointer; /* Cursor de mãozinha */
+        }
+        .custom:hover {
+            background-color: #45a049; /* Cor de fundo ao passar o mouse */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="idnome">Nome e Sobrenome:</label>
+                <input type="text" name="nome" id="idnome" minlength="5" maxlength="40">
+            </p>
+            <p>
+                <label for="idemail">E-mail:</label>
+                <input type="email" name="email" id="idemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="idtel">Telefone:</label>
+                <input type="tel" name="telefone" id="idtel" autocomplete="tel-area-code" required placeholder="xx xxxxx-xxxx">
+            </p>
+        </fieldset>
+         
+             <p>
+                <input type="submit" class="custom" value="Enviar">
+                <input type="reset" class="custom" value="Limpar">
+             </p>
+        
+    </form>
+        
+
+   
+    
+</body>
+</html>
