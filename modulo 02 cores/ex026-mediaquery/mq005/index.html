@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-
-   
-
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meus Site</h1>
 
-            <div id="burguer" onclick="clickMenu()"><img src="menu.png" alt="menu"></div> 
+            <i id="burguer" onclick="clickMenu()"><img src="menu.png" alt="menu"></i> 
 
         <menu id="itens">
             <ul>
@@ -37,6 +35,16 @@
         </article>
     </main>
     <script>
+
+        /*
+        function mudouTamanho() {
+            if (window.innerwidht >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }*/
+
         function clickMenu() {
           if  (itens.style.display == 'block') {
             itens.style.display = 'none'

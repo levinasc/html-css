@@ -25,7 +25,7 @@ img {
     height: 50px;
 }
 
-div#burguer {
+i#burguer {
     background-color: rgb(68, 68, 68);
     display: block;
     text-align: center;
@@ -33,7 +33,7 @@ div#burguer {
     cursor: pointer;
 }
 
-div#burguer:hover {
+i#burguer:hover {
     background-color: white;
     color: black;
 }
