@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            height: 500px;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: stretch;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!--FLEX DIRECTION ROW = esquerda p/ direita ->
+        FLEX DIRECTION ROW-REVERSE = direita p/ esquerda <-
+        FLEX DIRECTION COLUMN = cima p/ baixo 
+        FLEX DIRECTION COLUMN-REVERSE = baixo p/ cima
+
+    -->
+    <div class="conteiner">
+        <div class="item">Flexbox exemplo A</div>
+        <div class="item">Flexbox exemplo B</div>
+        <div class="item">Flexbox exemplo C</div>
+        <div class="item">Flexbox exemplo D</div>
+        <div class="item">Flexbox exemplo E</div>
+        <div class="item">Flexbox exemplo F</div>
+        <div class="item">Flexbox exemplo G</div>
+    </div>
+    
+</body>
+</html>
+
