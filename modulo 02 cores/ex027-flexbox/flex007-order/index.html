@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
+            justify-content: space-evenly;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            margin: 2px;
+            
+        }
+
+        /*ordem dos itens pode ser com style order ou id div#id */
+
+        /*class= div.      id= div# */
+
+        div#id1 {
+            order: 1;
+        }
+
+        /*usando o align-self p dar forma aos itens no eixo transversal*/
+
+        div#id4 {
+            align-self: center;       
+        }
+
+        div#id5 {
+            align-self: flex-end;       
+        }
+
+        div#id6 {
+            align-self: stretch;       
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--FLEX DIRECTION ROW = esquerda p/ direita ->
+        FLEX DIRECTION ROW-REVERSE = direita p/ esquerda <-
+        FLEX DIRECTION COLUMN = cima p/ baixo 
+        FLEX DIRECTION COLUMN-REVERSE = baixo p/ cima
+
+    -->
+    <div class="conteiner">
+        <div class="item" id="id1">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item" id="id4">D</div>
+        <div class="item" id="id5">E</div>
+        <div class="item" id="id6">F</div>
+        <div class="item"style="order: -1;">G</div>
+    </div>
+    
+</body>
+</html>
+
