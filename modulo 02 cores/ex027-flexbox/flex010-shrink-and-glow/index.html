@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item1 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+
+            /* flex-basis trava o tamanho dos itens */
+
+            /*flex-grow permite os itens crescerem (1) ou não (0) */
+            
+            /* flex-shrink permite os diminuirem (1) ou não (0) */
+
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        div.item2 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            flex-grow: 4;
+            flex-shrink: 0;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        div.item3 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--FLEX DIRECTION ROW = esquerda p/ direita ->
+        FLEX DIRECTION ROW-REVERSE = direita p/ esquerda <-
+        FLEX DIRECTION COLUMN = cima p/ baixo 
+        FLEX DIRECTION COLUMN-REVERSE = baixo p/ cima
+
+    -->
+    <div class="conteiner">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+    </div>
+    
+</body>
+</html>
+
