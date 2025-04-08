@@ -26,12 +26,13 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
 } 
 
 header > menu {
-    border: 1px dotted black;
+   /* border: 1px dotted black;*/
 
     display: flex;
     flex-flow: row wrap;
@@ -57,8 +58,10 @@ header > menu > a:hover {
 
 main {
     background-color: white;
-    margin: 10px;
+    width: 80vw;
+    margin: auto;
     padding: 10px;
+    margin-top: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0,0,0, 0.336);
 }
