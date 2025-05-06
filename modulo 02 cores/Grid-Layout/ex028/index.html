@@ -8,29 +8,49 @@
         div.container {
             border: 3px solid blue;
             display: grid;
-            height: 250px;
+            height: 400px;
+
+            /* grid-template: 100px 100px 100px / auto auto auto; */
+            grid-template-rows: 100px 100px 100px;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
-            gap: 5px;
+            
+            gap: 10px;
+
+            /* place-itens: normal normal; */
+            align-items: normal;
+            justify-items: normal; 
+
+            /* place-content: normal normal; */
+            align-content: normal;
+            justify-content: normal;
+
+            /* para criar um novo objeto q tenha o mesmo tamanho dos demais eu uso o
+            
+            grid-auto-row: 100px; 
+            ou o grid-auto-column: 100px; */
+
+            
 
         }
 
         div.item {
             border: 3px solid red;
             padding: 5px;
+            
+            text-align: center;
         }
 
     </style>
 </head>
 <body> <!--Align na Vertical e Justify na horizontal-->
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Alemanha</div>
+        <div class="item">Brasil</div>
+        <div class="item">Canadá</div>
+        <div class="item">Dinamarca</div>
+        <div class="item">Eslováquia</div>
+        <div class="item">Finlândia</div>
+        <div class="item">Groelândia</div>
     </div>
     
 </body>
